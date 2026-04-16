@@ -1,0 +1,9 @@
+include:
+  - postgres.yml
+  - mongodb.yml
+  - kafka.yml
+  - adminer.yml
+networks:
+  kiroff:
+    name: kiroff
+    driver: bridge

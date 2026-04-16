@@ -1,0 +1,32 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>org.kiroff.bank</groupId>
+   <artifactId>bank-account</artifactId>
+   <version>0.0.1-SNAPSHOT</version>
+   <packaging>pom</packaging>
+   <name>Bank Account (Parent)</name>
+   <properties>
+      <java.version>25</java.version>
+      <java.args>--sun-misc-unsafe-memory-access=allow --enable-native-access=ALL-UNNAMED -Dnet.bytebuddy.experimental=true</java.args>
+      <spring-boot.version>4.0.5</spring-boot.version>
+      <spring-cloud.version>2025.1.1</spring-cloud.version>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+      <maven.compiler.release>${java.version}</maven.compiler.release>
+      <maven.compiler.source>${java.version}</maven.compiler.source>
+      <maven.compiler.target>${java.version}</maven.compiler.target>
+      <maven.javadoc.skip>true</maven.javadoc.skip>
+      <maven.min.version>3.9.0</maven.min.version>
+
+      <argLine/>
+
+      <maven-surefire-plugin.version>3.5.4</maven-surefire-plugin.version>
+      <maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
+   </properties>
+   <modules>
+      <module>../cqrs-core</module>
+      <module>bank-account-command</module>
+      <module>bank-account-common</module>
+      <module>bank-account-query</module>
+   </modules>
+</project>
