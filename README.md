@@ -78,6 +78,9 @@ mvn spring-boot:run
 | Endpoint | Method | Description |
 | :--- | :--- | :--- |
 | `/v1/accounts` | `POST` | Open a new bank account |
+| `/v1/accounts/{id}/deposit` | `PUT` | Deposit funds to an account |
+| `/v1/accounts/{id}/withdraw` | `PUT` | Withdraw funds from an account |
+| `/v1/accounts/{id}` | `DELETE` | Close a bank account |
 
 ### Query API (`bank-account-query`)
 
