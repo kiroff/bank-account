@@ -2,6 +2,8 @@
 
 This project is a bank account management system implemented using the **CQRS (Command Query Responsibility Segregation)** and **Event Sourcing** architectural patterns. It is built with Spring Boot and leverages Kafka for event distribution, MongoDB as an event store, and PostgreSQL for the read model.
 
+
+![](./CQRS-Solution-Kafka-PostgreSQL.png)
 ## Architecture
 
 The system is split into two main parts:
